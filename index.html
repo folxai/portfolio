@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOLX AI</title>
+
+    <!-- Orbitron Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        @font-face {
+            font-family: 'ITC Benguiat';
+            src: url('css/ITCBenguiatStdBoldCn.OTF') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        .text-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.8rem;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+    </style>
+
+    <!-- favicons -->
+    <link rel="icon" sizes="180x180" href="favicon.ico">
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <span class="text-logo">FOLX AI</span>
+                    </a>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#services" class="smoothscroll">Our services</a></li>
+                        <li><a href="#works" class="smoothscroll">Our Works</a></li>
+                        <li><a href="#clients" class="smoothscroll">Trusted Clients</a></li>
+                        <li><a href="#contact" class="smoothscroll">Get In Touch</a></li>
+                    </ul>
+                </nav>
+
+                <!-- <ul class="s-header__social">
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:none;-ms-filter:none"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:none;-ms-filter:none"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:none;-ms-filter:none"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                            <span class="screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:none;-ms-filter:none"><path d="M20.66,6.98c-0.894-1.533-2.107-2.747-3.641-3.64C15.486,2.447,13.813,2,12,2S8.514,2.447,6.98,3.34 C5.447,4.233,4.233,5.447,3.34,6.98S2,10.187,2,12s0.446,3.487,1.34,5.02c0.894,1.534,2.107,2.747,3.641,3.64 C8.514,21.553,10.187,22,12,22s3.486-0.447,5.02-1.34c1.533-0.893,2.747-2.106,3.641-3.64C21.554,15.487,22,13.813,22,12 S21.554,8.513,20.66,6.98z M12,3.66c2,0,3.772,0.64,5.32,1.919c-0.92,1.174-2.286,2.14-4.1,2.9c-1.002-1.813-2.088-3.327-3.261-4.54 C10.641,3.753,11.319,3.66,12,3.66z M5.51,6.8c0.754-0.947,1.656-1.686,2.711-2.22c1.212,1.201,2.325,2.7,3.34,4.5 c-2,0.6-4.114,0.9-6.341,0.9c-0.573,0-1.006-0.013-1.3-0.04C4.227,8.793,4.757,7.747,5.51,6.8z M3.66,12 c0-0.054,0.003-0.12,0.01-0.2c0.007-0.08,0.01-0.146,0.01-0.2c0.254,0.014,0.641,0.02,1.161,0.02c2.666,0,5.146-0.367,7.439-1.1 c0.187,0.373,0.381,0.793,0.58,1.26c-1.32,0.293-2.674,1.006-4.061,2.14S6.4,16.247,5.76,17.5C4.36,15.913,3.66,14.08,3.66,12z M12,20.34c-1.894,0-3.594-0.587-5.101-1.759C7.5,17.394,8.423,16.259,9.67,15.18c1.246-1.08,2.483-1.753,3.71-2.02 c0.772,2.133,1.293,4.339,1.56,6.62C13.966,20.153,12.986,20.34,12,20.34z M19.08,16.38c-0.666,1.066-1.526,1.94-2.58,2.621 c-0.24-2.08-0.7-4.107-1.379-6.081c0.932-0.066,1.765-0.1,2.5-0.1c0.799,0,1.686,0.034,2.659,0.1 C20.146,14.16,19.746,15.313,19.08,16.38z M17.84,11.38c-1.16,0-2.233,0.047-3.22,0.14c-0.254-0.653-0.48-1.193-0.68-1.62 c2.066-0.906,3.532-2.006,4.399-3.3c1.2,1.414,1.854,3.027,1.96,4.84C19.487,11.4,18.667,11.38,17.84,11.38z"></path></svg>
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <!-- Particles JS container -->
+            <div id="particles-js" class="particles-container"></div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="s-intro__top-block">
+                        <!-- <span class="s-intro__bg"></span> -->
+
+                        <h1 class="s-intro__text" style="text-align: center;">
+                            Pioneering Tomorrow's<br>
+                            Technology with<br>
+                            <span>AI</span> - <span>Data Science</span> - <span>RPA</span><br>
+                            & <span>Robotics</span>.
+                        </h1>
+
+                        <p class="s-intro__subheading" style="text-align: center;">
+                            We build intelligent solutions that transform businesses. From advanced <br>
+                            algorithms to automated processes and intelligent robotics, <br>
+                            we're reimagining what's possible.
+                        </p>
+
+                        <a href="#services" class="s-intro__scroll-down smoothscroll">
+                            <span>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(180deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-intro__about-wrap" style="margin-bottom: 200px;">
+                <div class="column lg-6 md-6 tab-12" style="padding: 0 15px; display: flex;">
+                    <div style="background-color: rgba(40, 40, 40, 0.8); border-radius: 8px; padding: 25px 20px 18px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); height: 250px; width: 100%;">
+                        <h3 style="text-align: center; margin-top: 0; margin-bottom: 8px; color: #ffffff; font-weight: bold;">Mission</h3>
+                        <p style="text-align: center; margin: 0; line-height: 1.4;">
+                            <br>To empower businesses with cutting-edge AI, automation, and digital solutions by delivering innovative, scalable, and impactful technologies that simplify workflows, enhance decision-making, and drive growth.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="column lg-6 md-6 tab-12" style="padding: 0 15px; display: flex;">
+                    <div style="background-color: rgba(40, 40, 40, 0.8); border-radius: 8px; padding: 25px 20px 18px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); height: 250px; width: 100%;">
+                        <h3 style="text-align: center; margin-top: 0; margin-bottom: 8px; color: #ffffff; font-weight: bold;">Vision</h3>
+                        <p style="text-align: center; margin: 0; line-height: 1.4;">
+                            <br>To become a leading AI tech agency in the MENA region, driving smart automation and AI innovation across industries, while nurturing a future-ready team and ecosystem committed to ethical, accessible, and transformative technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+                
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=3><span>3</span>+</div>
+                    <h5>Successful Projects</h5>
+                    <p>
+                    Delivering transformative AI and automation solutions 
+                    that drive measurable business growth and operational
+                    efficiency across industries.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=15><span>15</span>+</div>
+                    <h5>Expert Team Members</h5>
+                    <p>
+                    A diverse team of AI specialists, data scientists,
+                    and strategists creating tailored solutions for
+                    complex business challenges.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=5><span>5</span>+</div>
+                    <h5>Industries Served</h5>
+                    <p>
+                    Implementing intelligent automation and data-driven
+                    insights across sectors including healthcare, 
+                    manufacturing, finance, and retail.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=8><span>8</span>+</div>
+                    <h5>Innovative Concepts</h5> 
+                    <p>
+                    Pioneering groundbreaking AI algorithms and robotics
+                    applications through our dedicated innovation lab
+                    focused on emerging technologies.
+                    </p> 
+                </div>
+    
+            </div> <!-- end about-stats -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # services
+        ================================================== -->
+        <section id="services" class="s-services target-section">
+
+            <div class="row section-header has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Our Services</h3>
+                    <h1 class="text-display-title">
+                        Enterprise-Grade AI and <br>
+                        Automation Solutions for <br>
+                        Business Transformation
+                    </h1>
+                </div>
+            </div> <!-- end section-header -->
+    
+            <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--product-design"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Enterprise AI Solutions</h3>
+                        <p>Tailored artificial intelligence implementation for enterprise-level organizations 
+                        in healthcare, financial services, retail, and manufacturing sectors. Our AI systems 
+                        deliver measurable ROI through operational optimization and data-driven intelligence.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--branding"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Advanced Data Science</h3>
+                        <p>Enterprise data science solutions encompassing predictive modeling, 
+                        statistical analysis, and machine learning implementations. We enable financial institutions, 
+                        healthcare providers, and commercial enterprises to leverage data as a strategic asset.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--frontend"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Robotic Process Automation</h3>
+                        <p>Enterprise-grade RPA implementation for streamlining operations in financial services,
+                        insurance, telecommunications, and logistics sectors. Our solutions optimize workforce allocation
+                        while ensuring regulatory compliance and operational excellence.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--research"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Industrial Robotics & IoT</h3>
+                        <p>Comprehensive robotics and IoT infrastructure solutions for industrial manufacturing,
+                        healthcare systems, and agricultural enterprises. Our implementations deliver measurable
+                        efficiency gains through integrated automation and real-time monitoring systems.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--illustration"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Business Intelligence</h3>
+                        <p>Enterprise business intelligence platforms for corporate decision-making across 
+                        retail, education, real estate, and energy sectors. Our solutions provide executive-level 
+                        insights through sophisticated analytics and data visualization systems.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Strategic AI Consultation</h3>
+                        <p>Executive-level AI strategy consultation for multinational corporations and growth-oriented
+                        enterprises across the MENA region. We provide comprehensive digital transformation frameworks
+                        and implementation roadmaps aligned with corporate objectives.
+                        </p>
+                    </div>
+                </div>
+    
+            </div> <!-- end services-list -->
+
+        </section> <!-- end s-services -->
+
+
+        <!-- ## works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row section-header section-header--dark has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Recent Works</h3>
+                    <h1 class="text-display-title">Here are some of our favorite projects we have done lately.</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row folio-list block-lg-one-third block-tab-one-half block-stack-on-550 collapse" data-animate-block>
+
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Meydan.png" title="The Red Wheel" data-size="1050x700">
+                                <img src="images/portfolio/Meydan.png" 
+                                     srcset="images/portfolio/Meydan.png 1x, images/portfolio/Meydan.png 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <!-- <div class="folio-item__cat">Branding</div> -->
+                            <h4 class="folio-item__title">Meydan Al-Hekayah</h4>
+                        </div>
+                        <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a> -->
+                        <div class="folio-item__caption">
+                            <p> Innovative project that blends artificial intelligence with our rich cultural heritage to bring traditional tales and folklore to life through children’s drawings and doodles.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Awn.png" title="Music Life" data-size="1050x700">
+                                <img src="images/portfolio/Awn.png" 
+                                     srcset="images/portfolio/Awn.png 1x, images/portfolio/Awn.png 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <!-- <div class="folio-item__cat">Frontend Design</div> -->
+                            <h4 class="folio-item__title">Awn</h4>
+                        </div>
+                        <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a> -->
+                        <div class="folio-item__caption">
+                            <p>A smart, multi-agent system that enables seamless interaction between specialized voice assistants to efficiently meet user needs.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/Suqi1.png" Title="OI Logo" data-size="1050x700">
+                                <img src="images/portfolio/Suqi1.png" 
+                                     srcset="images/portfolio/Suqi1.png 1x, images/portfolio/Suqi1.png2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <!-- <div class="folio-item__cat">Product Design</div> -->
+                            <h4 class="folio-item__title">Suqi</h4>
+                        </div>
+                        <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a> -->
+                        <div class="folio-item__caption">
+                            <p>AI-powered platform that analyzes financial news and time-series data to accurately forecast stock movements. Combining natural language processing with predictive modeling, it delivers actionable insights for smarter investment decisions.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+    
+            </div> <!-- folio-list -->
+
+            <!-- <div class="row clients-outer" data-animate-block>
+                <div class="column lg-12">
+
+                    <h3 class="text-clients-title" data-animate-el>
+                        We've had the priveledge with working with <br> 
+                        some of the largest and most iconic brands
+                    </h3>
+
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/atom.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/github.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/medium.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/steam.svg" /></a>
+                            <a href="#0" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div> 
+
+                </div> 
+            </div> -->
+
+            <!-- <div class="video-block">
+                <span class="video-block__bg-left"></span>
+                <span class="video-block__bg-right"></span>
+
+                <div class="video-block__content">
+                    <a href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:none;-ms-filter:none"><path d="M7 6L7 18 17 12z"></path></svg>
+                    </a>
+
+                    <p class="video-caption">
+                        Watch Video
+                    </p>
+                </div>
+            </div> end video-block -->
+
+            <!-- <div class="row testimonials" data-animate-block>
+                <div class="column lg-12">
+    
+                    <div class="swiper-container testimonial-slider" data-animate-el>
+    
+                        <div class="swiper-wrapper">
+
+                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Tim Cook</strong>
+                                        <span>CEO, Apple</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                                Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
+                                Laudantium quia consequatur molestias.
+                                </p>
+                            </div> 
+            
+                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Sundar Pichai</strong>
+                                        <span>CEO, Google</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                                Quasi voluptas eius distinctio. Atque eos maxime.
+                                </p>
+                            </div>  
+            
+                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Satya Nadella</strong>
+                                        <span>CEO, Microsoft</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                                Voluptatem dignissimos ut.
+                                </p>
+                            </div> 
+    
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Jeff Bezos</strong>
+                                        <span>CEO, Amazon</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                                </p>
+                            </div>  
+        
+                        </div>
+    
+                        <div class="swiper-pagination"></div> -->
+    
+                    </div> <!-- end swiper-container -->
+    
+                </div> <!-- end column -->
+            </div> <!-- end row testimonials -->
+
+        </section> <!-- end s-works -->
+
+        <section id="clients" class="s-works target-section">
+            <div class="row section-header section-header--dark has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Trusted Clients</h3>
+                    <!-- <h1 class="text-display-title">Here are some of our favorite projects we have done lately. Feel free to  check them out.</h1> -->
+                </div>
+            </div>
+            <div class="row clients-outer" data-animate-block>
+                <div class="column lg-12">
+
+                    <!-- <h3 class="text-clients-title" data-animate-el>
+                        We've had the priveledge with working with <br> 
+                        some of the largest and most iconic brands
+                    </h3> -->
+
+                    <style>
+                        /* Center client slides when there are few */
+                        .clients .swiper-wrapper {
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        /* Style for each individual client slide */
+                        .clients .swiper-slide {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 150px; /* Increased height */
+                            padding: 20px;
+                            width: 280px !important; /* Enforce larger width */
+                        }
+                        
+                        /* Style for the client images */
+                        .clients .swiper-slide img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                            min-width: 180px; /* Minimum width to ensure larger size */
+                            object-fit: contain;
+                            opacity: 1;
+                            filter: brightness(1.2);
+                        }
+                    </style>
+
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="https://mcy.gov.ae/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/ministry_of_culture.png" /></a>
+                            <a href="https://www.damacproperties.com/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/damac.png" /></a>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div> <!-- end clients -->
+
+                </div> <!-- end column -->
+            </div>
+            <!-- <div class="row testimonials" data-animate-block>
+                <div class="column lg-12">
+                    
+    
+                    <div class="swiper-container testimonial-slider" data-animate-el>
+
+    
+                        <div class="swiper-wrapper">
+                            
+
+                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Tim Cook</strong>
+                                        <span>CEO, Apple</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                                Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
+                                Laudantium quia consequatur molestias.
+                                </p>
+                            </div> 
+            
+                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Sundar Pichai</strong>
+                                        <span>CEO, Google</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                                Quasi voluptas eius distinctio. Atque eos maxime.
+                                </p>
+                            </div>  
+            
+                             <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Satya Nadella</strong>
+                                        <span>CEO, Microsoft</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                                Voluptatem dignissimos ut.
+                                </p>
+                            </div> 
+    
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Jeff Bezos</strong>
+                                        <span>CEO, Amazon</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                                </p>
+                            </div>  
+        
+                        </div>
+    
+                        <div class="swiper-pagination"></div> -->
+
+        </section>
+
+
+        <!-- ## contact
+        ================================================== -->
+        <section id="contact" class="s-contact target-section">
+
+            <div class="row section-header section-header--dark"">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Contact Us</h3>
+                    <h1 class="text-display-title">
+                        Ready to Transform Your Enterprise <br>with Intelligent Automation?
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-contact__content">
+                <div class="column lg-12 tab-12">
+                    <p class="lead" style="text-align: center; margin-bottom: 3rem;">
+                        Our team of experts is ready to discuss how our AI and automation solutions can address your specific business challenges.
+                    </p>
+                    
+                    <form id="contactForm" method="post" action="https://formspree.io/f/your-formspree-id" class="contact-form" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                        <fieldset style="width: 100%; max-width: 100%; padding: 0 2%;">
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="width: 100%;">
+                                        <input name="name" type="text" id="contactName" placeholder="Full Name" value="" minlength="2" required aria-required="true" class="full-width" style="background-color: rgba(55, 55, 55, 0.75); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 3px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); width: 100% !important; max-width: 100% !important;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="width: 100%;">
+                                        <input name="email" type="email" id="contactEmail" placeholder="Email Address" value="" required aria-required="true" class="full-width" style="background-color: rgba(55, 55, 55, 0.75); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 3px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); width: 100% !important; max-width: 100% !important;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="width: 100%;">
+                                        <input name="company" type="text" id="contactCompany" placeholder="Company Name" value="" class="full-width" style="background-color: rgba(55, 55, 55, 0.75); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 3px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); width: 100% !important; max-width: 100% !important;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="width: 100%;">
+                                        <input name="phone" type="tel" id="contactPhone" placeholder="Phone Number (optional)" value="" class="full-width" style="background-color: rgba(55, 55, 55, 0.75); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 3px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); width: 100% !important; max-width: 100% !important;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="width: 100%;">
+                                        <select name="service" id="contactService" class="full-width" style="background-color: rgba(55, 55, 55, 0.75); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 3px; padding: 14px 18px; height: auto; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); width: 100% !important; max-width: 100% !important;">
+                                            <option value="" disabled selected>Service of Interest</option>
+                                            <option value="Enterprise AI">Enterprise AI Solutions</option>
+                                            <option value="Data Science">Advanced Data Science</option>
+                                            <option value="RPA">Robotic Process Automation</option>
+                                            <option value="Robotics">Industrial Robotics & IoT</option>
+                                            <option value="BI">Business Intelligence</option>
+                                            <option value="Consulting">Strategic AI Consultation</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="width: 100%;">
+                                        <textarea name="message" id="contactMessage" placeholder="Please describe your project or inquiry" rows="7" cols="50" required aria-required="true" class="full-width" style="background-color: rgba(55, 55, 55, 0.75); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 3px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); width: 100% !important; max-width: 100% !important;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <style>
+                                ::placeholder {
+                                    color: rgba(255, 255, 255, 0.7) !important;
+                                    opacity: 1;
+                                }
+                                :-ms-input-placeholder {
+                                    color: rgba(255, 255, 255, 0.7) !important;
+                                }
+                                ::-ms-input-placeholder {
+                                    color: rgba(255, 255, 255, 0.7) !important;
+                                }
+                                select option {
+                                    background-color: #333333;
+                                }
+                                .contact-form .form-field input,
+                                .contact-form .form-field select,
+                                .contact-form .form-field textarea {
+                                    width: 100% !important;
+                                    max-width: 100% !important;
+                                    box-sizing: border-box !important;
+                                }
+                                .s-contact__content {
+                                    max-width: 90% !important;
+                                    margin: 0 auto !important;
+                                }
+                            </style>
+                            
+                            <div class="row" style="width: 100%; max-width: 100%; margin: 0 auto;">
+                                <div class="column lg-12 tab-12" style="margin: 0 auto; float: none; width: 100% !important; max-width: 95% !important; padding: 0;">
+                                    <div class="form-field" style="text-align: center; margin-top: 1rem; display: flex; justify-content: center; align-items: center;">
+                                        <button type="submit" class="btn btn--medium btn--primary" style="font-weight: 600; letter-spacing: 0.5px; padding: 12px 32px; min-width: 180px; margin: 0 auto; display: block; line-height: 1.5; display: flex; align-items: center; justify-content: center; height: 50px; vertical-align: middle;">Submit Inquiry</button>
+                                    </div>
+                                    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6); text-align: center;">
+                                        Your information is secure and will not be shared with third parties.
+                                    </p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <script>
+                        document.getElementById("contactForm").addEventListener("submit", function(e) {
+                            e.preventDefault();
+                            const form = this;
+                            
+                            // Submit the form using fetch
+                            fetch(form.action, {
+                                method: form.method,
+                                body: new FormData(form),
+                                headers: {
+                                    'Accept': 'application/json'
+                                }
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    // Show success message
+                                    form.reset();
+                                    alert("Thank you for your inquiry. Our team will contact you shortly.");
+                                } else {
+                                    throw new Error("Something went wrong. Please try again.");
+                                }
+                            })
+                            .catch(error => {
+                                alert(error.message);
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div style="width: 100%; max-width: 80%; margin: 3rem auto 0; border-top: 1px solid rgba(255, 255, 255, 0.15);"></div>
+
+            <footer class="s-footer">
+
+                <style>
+                    /* Footer text sizes increased for maximum visibility */
+                    .s-footer h4.h6 {
+                        font-size: 1.4rem;
+                        margin-bottom: 1.4rem;
+                        font-weight: 600;
+                    }
+                    .s-footer p, 
+                    .s-footer ul.contact-list li {
+                        font-size: 1.2rem;
+                        line-height: 1.8;
+                    }
+                    .s-footer ul.contact-list li {
+                        margin-bottom: 0.9rem;
+                    }
+                    .s-footer a {
+                        font-weight: 500;
+                    }
+                    .ss-copyright span {
+                        font-size: 1.1rem;
+                    }
+                    .ss-go-top__text {
+                        font-size: 1.1rem;
+                    }
+                </style>
+
+                <div class="row s-footer__top">
+                    <div class="column lg-4 md-6 stack-on-700 s-footer__block contact-address">
+                        <h4 class="h6">Corporate Headquarters</h4>
+        
+                        <p>
+                        FOLX AI Technologies<br>
+                        Amman, Jordan
+                        </p>
+                    </div>
+
+                    <!-- <div class="column lg-4 md-6 stack-on-700 s-footer__block contact-social">
+                        <h4 class="h6">Connect With Us</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="#0">LinkedIn</a></li>
+                            <li><a href="#0">Twitter</a></li>
+                            <li><a href="#0">Facebook</a></li>
+                        </ul>
+                    </div> -->
+        
+                    <div class="column lg-4 md-12 s-footer__block contact-number">
+                        <h4 class="h6">Direct Contact</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="mailto:infofolx.ai@gmail.com" target="_blank" rel="noopener">infofolx.ai@gmail.com</a></li>
+                            <li><a href="tel:+971568548586">+971 56 854 8586</a></li>
+                            <li><a href="tel:+962792918434">+962 79 291 8434</a></li>
+                        </ul> 
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+                <div class="row s-footer__bottom">
+                    <div class="column ss-copyright">
+                        <span>© Copyright FOLX AI 2025. All Rights Reserved.</span> 
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <span class="ss-go-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                            </span>
+                            <span class="ss-go-top__text">Back to Top</span>
+                        </a>
+                    </div>
+                </div> <!-- end s-footer__bottom -->
+
+            </footer>
+
+        </section> <!-- end s-contact -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
