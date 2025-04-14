@@ -4486,3 +4486,12 @@ img.u-pull-left {
     overflow: hidden;
     margin-bottom: 4rem;  /* Vertical spacing between projects */
 }
+
+.service-text p {
+    color: rgba(255, 255, 255, 0.6);  /* Making the description text lighter */
+    line-height: 1.8;
+}
+
+.service-text h3 {
+    color: #ffffff;  /* Keeping the service titles bright white */
+}
