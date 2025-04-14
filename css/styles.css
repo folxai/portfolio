@@ -3678,8 +3678,9 @@ img.u-pull-left {
 }
 
 .folio-item {
-    position : relative;
-    overflow : hidden;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;  /* Adding spacing between projects */
 }
 
 .folio-item__caption {
@@ -4474,4 +4475,14 @@ img.u-pull-left {
     .stats__count {
         font-size: calc(var(--text-size) * 2.5);
     }
+}
+
+.folio-list .column {
+    padding: 0 2rem;
+}
+
+.folio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;  /* Vertical spacing between projects */
 }
