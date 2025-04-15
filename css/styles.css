@@ -90,18 +90,18 @@
  * ------------------------------------------------------------------- */
 :root {
 
-    /* color-1(#24A89B)
+    /* color-1(#ed6e09)
      * color-2(#eddea4)
      */
-    --color-1                      : hsla(28, 65%, 40%, 1);
+    --color-1                      : #ed6e09;
     --color-2                      : hsla(48, 67%, 79%, 1);
 
     /* theme color variations
      */
-    --color-1-lighter              : hsla(28, 65%, 60%, 1);
-    --color-1-light                : rgb(210, 122, 45);
-    --color-1-dark                 : hsla(28, 65%, 35%, 1);
-    --color-1-darker               : hsla(28, 65%, 20%, 1);
+    --color-1-lighter              : #ff8f2c;
+    --color-1-light                : #ff7b0d;
+    --color-1-dark                 : #d66208;
+    --color-1-darker               : #b45206;
     --color-2-lighter              : hsla(48, 67%, 99%, 1);
     --color-2-light                : hsla(48, 67%, 89%, 1);
     --color-2-dark                 : hsla(48, 67%, 69%, 1);
@@ -3526,7 +3526,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    background-color : var(--color-1-dark);
+    background-color : hsla(28, 65%, 40%, 1);
     padding-top      : var(--vspace-5);
     padding-bottom   : var(--vspace-5);
 }
