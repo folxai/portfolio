@@ -527,7 +527,7 @@
                     <div class="section-header section-header--dark" style="margin-bottom: 40px;">
                         <h3 class="text-pretitle">Trusted Clients</h3>
                     </div>
-                    <div class="swiper-container clients" data-animate-el>
+                    <div class="swiper-container clients" data-animate-el style="width: 100%; max-width: 800px; margin: 0 auto;">
                         <div class="swiper-wrapper clients__content">
                             <a href="https://mcy.gov.ae/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/ministry_of_culture.png" /></a>
                             <a href="https://www.damacproperties.com/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/damac.png" /></a>
@@ -540,7 +540,7 @@
                     <div class="section-header section-header--dark" style="margin-bottom: 40px;">
                         <h3 class="text-pretitle">Partners with</h3>
                     </div>
-                    <div class="swiper-container clients" data-animate-el>
+                    <div class="swiper-container clients" data-animate-el style="width: 100%; max-width: 800px; margin: 0 auto;">
                         <div class="swiper-wrapper clients__content">
                             <a href="https://www.linkedin.com/company/byte-center-jo/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/byte_center.png" /></a>
                         </div>
@@ -561,9 +561,9 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 150px; /* Increased height */
-                    padding: 20px;
-                    width: 280px !important; /* Enforce larger width */
+                    height: 180px; /* Increased height */
+                    padding: 30px;
+                    width: 320px !important; /* Increased width */
                 }
                 
                 /* Style for the client images */
@@ -572,19 +572,40 @@
                     max-height: 100%;
                     width: auto;
                     height: auto;
-                    min-width: 180px; /* Minimum width to ensure larger size */
+                    min-width: 200px; /* Increased minimum width */
                     object-fit: contain;
                     opacity: 1;
                     filter: brightness(1.2);
                 }
 
+                /* Adjust spacing for better layout */
+                .clients-outer {
+                    max-width: 1600px !important;
+                    margin: 0 auto !important;
+                    padding: 0 40px;
+                }
+
+                .clients-outer .column {
+                    padding: 0 30px;
+                }
+
+                .text-pretitle {
+                    font-size: 1.8rem;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+
                 @media screen and (max-width: 800px) {
                     .clients-outer .column {
                         margin-bottom: 60px;
+                        padding: 0 20px;
                     }
                     .text-pretitle {
                         text-align: center;
                         margin-bottom: 30px;
+                    }
+                    .clients-outer {
+                        padding: 0 20px;
                     }
                 }
             </style>

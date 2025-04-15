@@ -221,8 +221,8 @@
 
         const clientsSwiper = new Swiper('.clients', {
 
-            slidesPerView: 4,
-            spaceBetween: 4,
+            slidesPerView: 5,
+            spaceBetween: 20,
             slideClass: 'clients__slide',
             pagination: {
                 el: '.swiper-pagination',
@@ -231,17 +231,18 @@
             breakpoints: {
                 // when window width is > 400px
                 401: {
-                    spaceBetween: 8
+                    slidesPerView: 5,
+                    spaceBetween: 20
                 },
                 // when window width is > 900px
                 901: {
-                    slidesPerView: 5,
-                    spaceBetween: 10
+                    slidesPerView: 6,
+                    spaceBetween: 30
                 },
                 // when window width is > 1200px
                 1201: {
-                    slidesPerView: 6,
-                    spaceBetween: 10
+                    slidesPerView: 8,
+                    spaceBetween: 40
                 }
             }
         });
