@@ -522,22 +522,11 @@
         </section> <!-- end s-works -->
 
         <section id="clients" class="s-works target-section">
-            <div class="row section-header section-header--dark has-bottom-sep">
-                <div class="column lg-12">
-                    <div class="row" style="margin-bottom: 40px;">
-                        <div class="column lg-6 md-6 tab-12" style="position: relative;">
-                            <h3 class="text-pretitle">Trusted Clients</h3>
-                            <div class="separator-line"></div>
-                        </div>
-                        <div class="column lg-6 md-6 tab-12" style="position: relative;">
-                            <h3 class="text-pretitle">Partners with</h3>
-                            <div class="separator-line"></div>
-                        </div>
+            <div class="row clients-outer" data-animate-block>
+                <div class="column lg-6 md-6 tab-12">
+                    <div class="section-header section-header--dark" style="margin-bottom: 40px;">
+                        <h3 class="text-pretitle">Trusted Clients</h3>
                     </div>
-                </div>
-            </div>
-            <div class="row clients-outer" data-animate-block style="max-width: 90%; margin: 0 auto;">
-                <div class="column lg-5 md-5 tab-12">
                     <div class="swiper-container clients" data-animate-el>
                         <div class="swiper-wrapper clients__content">
                             <a href="https://mcy.gov.ae/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/ministry_of_culture.png" /></a>
@@ -547,11 +536,10 @@
                     </div>
                 </div>
                 
-                <div class="column lg-2 md-2 hide-on-tab vertical-separator">
-                    <div class="separator"></div>
-                </div>
-
-                <div class="column lg-5 md-5 tab-12">
+                <div class="column lg-6 md-6 tab-12">
+                    <div class="section-header section-header--dark" style="margin-bottom: 40px;">
+                        <h3 class="text-pretitle">Partners with</h3>
+                    </div>
                     <div class="swiper-container clients" data-animate-el>
                         <div class="swiper-wrapper clients__content">
                             <a href="https://www.linkedin.com/company/byte-center-jo/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/byte_center.png" /></a>
@@ -590,38 +578,13 @@
                     filter: brightness(1.2);
                 }
 
-                /* Vertical separator line */
-                .vertical-separator .separator {
-                    width: 1px;
-                    height: 150px;
-                    background: rgba(255, 255, 255, 0.1);
-                    margin: 0 auto;
-                }
-
-                /* Horizontal separator lines under titles */
-                .separator-line {
-                    height: 2px;
-                    background: rgba(255, 255, 255, 0.1);
-                    width: 80%;
-                    margin: 15px auto 0;
-                }
-
                 @media screen and (max-width: 800px) {
                     .clients-outer .column {
-                        margin-bottom: 40px;
+                        margin-bottom: 60px;
                     }
                     .text-pretitle {
                         text-align: center;
-                        margin-bottom: 15px;
-                    }
-                    .clients-outer {
-                        max-width: 100% !important;
-                    }
-                    /* Add horizontal separator for mobile */
-                    .column.tab-12:first-child {
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                        padding-bottom: 40px;
-                        margin-bottom: 40px;
+                        margin-bottom: 30px;
                     }
                 }
             </style>
