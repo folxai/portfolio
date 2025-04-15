@@ -27,13 +27,9 @@
             font-style: normal;
         }
         
-        .text-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3.8rem;
-            color: #ffffff;
-            text-decoration: none;
-            letter-spacing: 1px;
-            font-weight: 700;
+        .logo img {
+            max-height: 40px;
+            width: auto;
         }
     </style>
 
@@ -65,7 +61,7 @@
             <div class="s-header__block">
                 <div class="s-header__logo">
                     <a class="logo" href="index.html">
-                        <span class="text-logo">FOLX AI</span>
+                        <img src="images/Cover.png" alt="FOLX AI Logo">
                     </a>
                 </div>
 
@@ -149,23 +145,48 @@
 
             <div class="row row-x-center s-intro__about-wrap" style="margin-bottom: 200px;">
                 <div class="column lg-6 md-6 tab-12" style="padding: 0 15px; display: flex;">
-                    <div style="background-color: rgba(40, 40, 40, 0.8); border-radius: 8px; padding: 25px 20px 18px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); height: 250px; width: 100%;">
+                    <div class="mission-vision-box" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 8px; padding: 25px 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); width: 100%; min-height: 250px; display: flex; flex-direction: column;">
                         <h3 style="text-align: center; margin-top: 0; margin-bottom: 8px; color: #ffffff; font-weight: bold;">Mission</h3>
-                        <p style="text-align: center; margin: 0; line-height: 1.4;">
-                            <br>To empower businesses with cutting-edge AI, automation, and digital solutions by delivering innovative, scalable, and impactful technologies that simplify workflows, enhance decision-making, and drive growth.
+                        <p style="text-align: center; margin: 0; line-height: 1.6; flex-grow: 1; display: flex; align-items: center; font-size: clamp(14px, 2.5vw, 16px);">
+                            To empower businesses with cutting-edge AI, automation, and digital solutions by delivering innovative, scalable, and impactful technologies that simplify workflows, enhance decision-making, and drive growth.
                         </p>
                     </div>
                 </div>
                 
                 <div class="column lg-6 md-6 tab-12" style="padding: 0 15px; display: flex;">
-                    <div style="background-color: rgba(40, 40, 40, 0.8); border-radius: 8px; padding: 25px 20px 18px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); height: 250px; width: 100%;">
+                    <div class="mission-vision-box" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 8px; padding: 25px 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); width: 100%; min-height: 250px; display: flex; flex-direction: column;">
                         <h3 style="text-align: center; margin-top: 0; margin-bottom: 8px; color: #ffffff; font-weight: bold;">Vision</h3>
-                        <p style="text-align: center; margin: 0; line-height: 1.4;">
-                            <br>To become a leading AI tech agency in the MENA region, driving smart automation and AI innovation across industries, while nurturing a future-ready team and ecosystem committed to ethical, accessible, and transformative technology.
+                        <p style="text-align: center; margin: 0; line-height: 1.6; flex-grow: 1; display: flex; align-items: center; font-size: clamp(14px, 2.5vw, 16px);">
+                            To become a leading AI tech agency in the MENA region, driving smart automation and AI innovation across industries, while nurturing a future-ready team and ecosystem committed to ethical, accessible, and transformative technology.
                         </p>
                     </div>
                 </div>
             </div>
+
+            <style>
+                @media screen and (max-width: 800px) {
+                    .mission-vision-box {
+                        min-height: 280px !important;
+                    }
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .mission-vision-box {
+                        min-height: 300px !important;
+                        margin-bottom: 20px;
+                    }
+                    .s-intro__about-wrap {
+                        margin-bottom: 100px !important;
+                    }
+                }
+                
+                @media screen and (max-width: 400px) {
+                    .mission-vision-box {
+                        min-height: 340px !important;
+                        padding: 20px 15px !important;
+                    }
+                }
+            </style>
 
             <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
                 
@@ -503,132 +524,107 @@
         <section id="clients" class="s-works target-section">
             <div class="row section-header section-header--dark has-bottom-sep">
                 <div class="column lg-12">
-                    <h3 class="text-pretitle">Trusted Clients</h3>
-                    <!-- <h1 class="text-display-title">Here are some of our favorite projects we have done lately. Feel free to  check them out.</h1> -->
+                    <div class="row" style="margin-bottom: 40px;">
+                        <div class="column lg-6 md-6 tab-12" style="position: relative;">
+                            <h3 class="text-pretitle">Trusted Clients</h3>
+                            <div class="separator-line"></div>
+                        </div>
+                        <div class="column lg-6 md-6 tab-12" style="position: relative;">
+                            <h3 class="text-pretitle">Partners with</h3>
+                            <div class="separator-line"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row clients-outer" data-animate-block>
-                <div class="column lg-12">
-
-                    <!-- <h3 class="text-clients-title" data-animate-el>
-                        We've had the priveledge with working with <br> 
-                        some of the largest and most iconic brands
-                    </h3> -->
-
-                    <style>
-                        /* Center client slides when there are few */
-                        .clients .swiper-wrapper {
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        /* Style for each individual client slide */
-                        .clients .swiper-slide {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 150px; /* Increased height */
-                            padding: 20px;
-                            width: 280px !important; /* Enforce larger width */
-                        }
-                        
-                        /* Style for the client images */
-                        .clients .swiper-slide img {
-                            max-width: 100%;
-                            max-height: 100%;
-                            width: auto;
-                            height: auto;
-                            min-width: 180px; /* Minimum width to ensure larger size */
-                            object-fit: contain;
-                            opacity: 1;
-                            filter: brightness(1.2);
-                        }
-                    </style>
-
+            <div class="row clients-outer" data-animate-block style="max-width: 90%; margin: 0 auto;">
+                <div class="column lg-5 md-5 tab-12">
                     <div class="swiper-container clients" data-animate-el>
                         <div class="swiper-wrapper clients__content">
                             <a href="https://mcy.gov.ae/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/ministry_of_culture.png" /></a>
                             <a href="https://www.damacproperties.com/en/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/damac.png" /></a>
                         </div>
-
                         <div class="swiper-pagination"></div>
-                    </div> <!-- end clients -->
+                    </div>
+                </div>
+                
+                <div class="column lg-2 md-2 hide-on-tab vertical-separator">
+                    <div class="separator"></div>
+                </div>
 
-                </div> <!-- end column -->
-            </div>
-            <!-- <div class="row testimonials" data-animate-block>
-                <div class="column lg-12">
-                    
-    
-                    <div class="swiper-container testimonial-slider" data-animate-el>
-
-    
-                        <div class="swiper-wrapper">
-                            
-
-                             <div class="testimonial-slider__slide swiper-slide">
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>Tim Cook</strong>
-                                        <span>CEO, Apple</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                                Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
-                                Laudantium quia consequatur molestias.
-                                </p>
-                            </div> 
-            
-                             <div class="testimonial-slider__slide swiper-slide">
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>Sundar Pichai</strong>
-                                        <span>CEO, Google</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                                Quasi voluptas eius distinctio. Atque eos maxime.
-                                </p>
-                            </div>  
-            
-                             <div class="testimonial-slider__slide swiper-slide">
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>Satya Nadella</strong>
-                                        <span>CEO, Microsoft</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                                Voluptatem dignissimos ut.
-                                </p>
-                            </div> 
-    
-                            <div class="testimonial-slider__slide swiper-slide">
-                                <div class="testimonial-slider__author">
-                                    <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                    <cite class="testimonial-slider__cite">
-                                        <strong>Jeff Bezos</strong>
-                                        <span>CEO, Amazon</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
-                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
-                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                                </p>
-                            </div>  
-        
+                <div class="column lg-5 md-5 tab-12">
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="https://www.linkedin.com/company/byte-center-jo/" title="" class="swiper-slide clients__slide" target="_blank" rel="noopener"><img src="images/icons/clients/byte_center.png" /></a>
                         </div>
-    
-                        <div class="swiper-pagination"></div> -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                /* Center client slides when there are few */
+                .clients .swiper-wrapper {
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                /* Style for each individual client slide */
+                .clients .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 150px; /* Increased height */
+                    padding: 20px;
+                    width: 280px !important; /* Enforce larger width */
+                }
+                
+                /* Style for the client images */
+                .clients .swiper-slide img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    min-width: 180px; /* Minimum width to ensure larger size */
+                    object-fit: contain;
+                    opacity: 1;
+                    filter: brightness(1.2);
+                }
+
+                /* Vertical separator line */
+                .vertical-separator .separator {
+                    width: 1px;
+                    height: 150px;
+                    background: rgba(255, 255, 255, 0.1);
+                    margin: 0 auto;
+                }
+
+                /* Horizontal separator lines under titles */
+                .separator-line {
+                    height: 2px;
+                    background: rgba(255, 255, 255, 0.1);
+                    width: 80%;
+                    margin: 15px auto 0;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .clients-outer .column {
+                        margin-bottom: 40px;
+                    }
+                    .text-pretitle {
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+                    .clients-outer {
+                        max-width: 100% !important;
+                    }
+                    /* Add horizontal separator for mobile */
+                    .column.tab-12:first-child {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                        padding-bottom: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+            </style>
 
         </section>
 
