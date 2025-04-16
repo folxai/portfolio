@@ -3526,7 +3526,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    background-color : hsla(28, 65%, 40%, 1);
+    background-color : rgb(209, 118, 38);
     padding-top      : var(--vspace-5);
     padding-bottom   : var(--vspace-5);
 }
